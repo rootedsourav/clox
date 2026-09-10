@@ -12,7 +12,8 @@ Since I don't have a formal background in Java (which the first half of the book
 
 ## 🗓️ Progress Tracker
 
-*   **Day 1:** Setting up the project, escaping the theory trap, and implementing the first bytecode chunks. (Currently here! 📍)
+*   **Day 1:** Setting up the project, escaping the theory trap, and implementing the first bytecode chunks.
+*   **Day 2:** Implementing the chunk.c, chunk.h, and memory.h for creating a Synamic Array, or "Vector" in C++ (Currently here! 📍)
 
 <!-- > ## 🛠️ Tech Stack
 *   **Language:** C
