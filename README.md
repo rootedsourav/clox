@@ -13,17 +13,26 @@ Since I don't have a formal background in Java (which the first half of the book
 ## 🗓️ Progress Tracker
 
 *   **Day 1:** Setting up the project, escaping the theory trap, and implementing the first bytecode chunks.
-*   **Day 2:** Implementing the chunk.c, chunk.h, and memory.h for creating a Synamic Array, or "Vector" in C++ (Currently here! 📍)
+  *   **Day 2:** Implementing `chunk.c`, `chunk.h`, and `memory.h` for creating a Dynamic Array. 
+*   **Day 3:** Added `debug.c`, `debug.h` & finally implemented the `main.c`. (Currently here! 📍)
 
-<!-- > ## 🛠️ Tech Stack
+## ✅ What's Implemented So Far
+
+- **Bytecode Chunks:** A growable dynamic array (`Chunk`) to store compiled bytecode.
+- **Memory Management:** Centralized `reallocate()` function with amortized-growth macros (`GROW_CAPACITY`, `GROW_ARRAY`).
+- **Opcodes:** `OP_RETURN`.
+- **Disassembler:** Basic instruction printer (`disassembleChunk`) for debugging bytecode contents.
+- **Entry Point:** A working `main.c` that builds a chunk, writes an instruction, disassembles it, and cleans up memory.
+
+> ## 🛠️ Tech Stack
 *   **Language:** C
 *   **Compiler:** GCC
-*   **Architecture:** Bytecode Virtual Machine -->
+*   **Architecture:** Bytecode Virtual Machine
 
 ## ⚙️ How to Build and Run
 
 This project is compiled using standard GCC. To build and run the current codebase:
 
 ```bash
-gcc -o interpreter main.c
-./interpreter
+gcc main.c memory.c debug.c chunk.c -o main
+./main
