@@ -13,8 +13,9 @@ Since I don't have a formal background in Java (which the first half of the book
 ## 🗓️ Progress Tracker
 
 *   **Day 1:** Setting up the project, escaping the theory trap, and implementing the first bytecode chunks.
-  *   **Day 2:** Implementing `chunk.c`, `chunk.h`, and `memory.h` for creating a Dynamic Array. 
-*   **Day 3:** Added `debug.c`, `debug.h` & finally implemented the `main.c`. (Currently here! 📍)
+*   **Day 2:** Implementing `chunk.c`, `chunk.h`, and `memory.h` for creating a Dynamic Array. 
+*   **Day 3:** Added `debug.c`, `debug.h` & finally implemented the `main.c`.
+*   **Day 4:** Finished Chapter 14 on craftinginterpreters. (Currently here! 📍)
 
 ## ✅ What's Implemented So Far
 
@@ -34,5 +35,5 @@ Since I don't have a formal background in Java (which the first half of the book
 This project is compiled using standard GCC. To build and run the current codebase:
 
 ```bash
-gcc main.c memory.c debug.c chunk.c -o main
+gcc main.c memory.c debug.c chunk.c value.c -o main
 ./main
